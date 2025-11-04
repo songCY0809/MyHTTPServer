@@ -1,0 +1,47 @@
+# 构建目录
+build/
+cmake-build-*/
+
+# CMake生成的文件
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps/
+*.cmake
+
+# 编译生成的文件
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.exe
+
+# 依赖文件
+*.d
+
+# 可执行文件
+simple_server
+simple_server.exe
+
+# IDE相关文件
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 日志文件
+*.log
+
+# 临时文件
+*.tmp
+*.bak
+*.cache
