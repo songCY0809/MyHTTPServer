@@ -60,4 +60,4 @@ namespace http
         std::string                         body_;
         bool                                isFile_;
     };
-}
+}// namespace http

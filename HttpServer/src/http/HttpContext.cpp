@@ -39,7 +39,7 @@ namespace http
                 const char* crlf = buf->findCRLF();
                 if (crlf)
                 {
-                    const char* colon = std::find(buf->peek(), crlf, ":");
+                    const char* colon = std::find(buf->peek(), crlf, ':');
                     if (colon < crlf)
                     {
                         request_.addHeader(buf->peek(), colon, crlf);
@@ -158,5 +158,4 @@ namespace http
         }
         return succeed;
     }
-
-}
+}// namespace http

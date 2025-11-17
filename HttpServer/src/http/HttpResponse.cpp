@@ -42,4 +42,4 @@ namespace http
         statusCode_ = statusCode;
         statusMessage_ = statusMessage;
     }
-}
+}// namespace http

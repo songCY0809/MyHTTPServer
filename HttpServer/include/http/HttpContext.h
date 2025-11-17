@@ -45,4 +45,4 @@ namespace http
         HttpRequestParseState   state_;
         HttpRequest             request_;
     };
-}
+}// namespace http

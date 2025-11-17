@@ -40,7 +40,10 @@ namespace http
 
     void HttpRequest::setPath(const char* start, const char* end)
     {
-        path_.assign(start, end);
+        if (end >= start)
+        {
+            path_.assign(start, end);
+        }
     }
 
     void HttpRequest::setPathParameters(const std::string& key, const std::string& value)
@@ -147,5 +150,4 @@ namespace http
         std::swap(content_, that.content_);
         std::swap(contentLength_, that.contentLength_);
     }
-
-}
+}// namespace http
