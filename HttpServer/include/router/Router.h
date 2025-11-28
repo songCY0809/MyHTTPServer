@@ -68,7 +68,6 @@ namespace http
             // 处理请求
             bool route(const HttpRequest& req, HttpResponse* resp);
 
-
         private:
             std::regex convertToRegex(const std::string& pathPattern)
             {
@@ -86,7 +85,6 @@ namespace http
                     request.setPathParameters("param" + std::to_string(i), match[i].str());
                 }
             }
-
 
         private:
             struct RouteCallbackObj
