@@ -20,7 +20,7 @@ namespace http
 
             if (request.method() == HttpRequest::Method::kOptions)
             {
-                LOG_INFO << "Processiong CORS preflight request";
+                LOG_INFO << "Processing CORS preflight request";
                 HttpResponse response;
                 handlePreflightRequest(request, response);
                 throw response;

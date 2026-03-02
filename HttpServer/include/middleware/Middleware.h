@@ -15,7 +15,7 @@ namespace http
             // 请求前处理
             virtual void before(HttpRequest& request) = 0;
 
-            // 相应后处理
+            // 响应后处理
             virtual void after(HttpResponse& response) = 0;
 
             // 设置下一个中间件
